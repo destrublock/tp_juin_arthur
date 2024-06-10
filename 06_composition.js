@@ -9,7 +9,8 @@
  */
 
 const concat = (arr1, arr2) => {
-    let arr3 = [...arr1, ...arr2];
+    arr1 = [...arr1, ...arr2];
+    return arr1;
 }
 
 /**
@@ -23,6 +24,7 @@ const concat = (arr1, arr2) => {
 
 const push = (arr, item) => {
     arr = [...arr, item];
+    return arr;
 }
 
 /**
@@ -32,7 +34,8 @@ const push = (arr, item) => {
  */
 
 const merge = (obj1, obj2) => {
-    let arr = {...obj1, ...obj2};
+    obj1 = {...obj1, ...obj2};
+    return obj1;
 }
 
 /**
@@ -46,6 +49,7 @@ const merge = (obj1, obj2) => {
 
 const setName = (obj, name) => {
     obj.name = name;
+    return obj;
 }
 
 console.log(concat([1,2,3],[4,5,6]));
