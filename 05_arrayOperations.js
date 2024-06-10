@@ -10,7 +10,9 @@
  * 
   */
 
-const multiplyByTwo = (array) => {}
+const multiplyByTwo = (array) => {
+    array.map(num=>num*2)
+}
 
 
 /**
